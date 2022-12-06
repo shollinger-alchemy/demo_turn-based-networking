@@ -1,5 +1,5 @@
 # Turned Based Networking Demo
-This repository is for demonstration purposes and is not suitable for production, nor is it guarateed to run in Unity as-is.
+This repository is for demonstration purposes and is not suitable for production, nor is it guaranteed to run in Unity as-is.
 
 ## Overview
 The premise of the game for this demo is a multiplayer turn-based match game where each player controls several characters they choose in the match lobby.  During the game, each character takes a turn sequentially, until they can no longer take more actions.  The demonstration shown here is using Mirror, an open source networking layer for Unity.  The implementation uses gated functions for client/server communication that will only compile and run in each respective environment.  The network design uses an authoritative server architecture for maintaining game-state and deciding the outcome of player decisions, which can involve randomized stat changes (eg. character damage, buffs, etc);
