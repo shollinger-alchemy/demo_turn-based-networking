@@ -7,9 +7,9 @@ The premise of the game for this demo is a multiplayer turn-based match game whe
 The Actions characters perform can be multi-part, with the server and each client sequentially running the Actions' phases until they are complete.  The Actions and event Signaling systems used in this demo are implemented elsewhere, but it does show the use of Unity Timelines to perform Action sequences.  This allows for layered cinematic actions to take place across the network.
 
 ## Technologies Used
-[Unity](https://unity.com/)
-[Mirror](https://mirror-networking.com/)
-[Timeline](https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html)
+* [Unity](https://unity.com/)
+* [Mirror](https://mirror-networking.com/)
+* [Timeline](https://docs.unity3d.com/Packages/com.unity.timeline@1.8/manual/index.html)
 
 ## Concepts Demonstrated
 * Authoritative Server architecture
