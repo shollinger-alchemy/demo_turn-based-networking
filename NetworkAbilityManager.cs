@@ -49,7 +49,8 @@ namespace Alchemy {
     */
     public class NetworkAbilityManager : NetworkBehaviour {
         // Placeholder value for the demo.  This value would be tied to each Action individually in a full implementation.
-        private static int BASE_STAT_CHANGE_MIN = -10;  
+        private static int BASE_STAT_CHANGE_MIN = -10;
+         private static int BASE_STAT_CHANGE_MAX = 0;  
 
         private PlayableDirector playableDirector;
 
@@ -141,7 +142,7 @@ namespace Alchemy {
             TurnBasedActor actor = (TurnBasedActor) actionContext.actor;
 
             foreach(StatDefinition.StatValue statValueContainer in actionContext.ability.targetModifiers.statValues) {
-                int value = statValueContainer.statValue + Random.Range(BASE_STAT_CHANGE_MIN, 0);
+                int value = statValueContainer.statValue + Random.Range(BASE_STAT_CHANGE_MIN, BASE_STAT_CHANGE_MAX);
 
                 statsDiff.initalizeStat(statValueContainer.statDefinition, value);
             }
