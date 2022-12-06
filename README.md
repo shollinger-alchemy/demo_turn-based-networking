@@ -13,5 +13,5 @@ The Actions characters perform can be multi-part, with the server and each clien
 
 ## Concepts Demonstrated
 * Authoritative Server architecture
-* Game networking concepts
+* Matchmaking game initialization
 * Turn-based control-flow
