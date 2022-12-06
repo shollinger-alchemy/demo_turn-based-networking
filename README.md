@@ -1,4 +1,4 @@
-# Turned Based Networking Demo
+# Turn-Based Networking Demo
 This repository is for demonstration purposes and is not suitable for production, nor is it guaranteed to run in Unity as-is.
 
 ## Overview
