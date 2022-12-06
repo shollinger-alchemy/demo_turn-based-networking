@@ -140,10 +140,10 @@ namespace Alchemy {
             Stats statsDiff = new Stats();
             TurnBasedActor actor = (TurnBasedActor) actionContext.actor;
 
-            foreach(StatDefinition.StatValue statValue in actionContext.ability.targetModifiers.statValues) {
-                int value = statValue.statValue + Random.Range(BASE_STAT_CHANGE_MIN, 0);
+            foreach(StatDefinition.StatValue statValueContainer in actionContext.ability.targetModifiers.statValues) {
+                int value = statValueContainer.statValue + Random.Range(BASE_STAT_CHANGE_MIN, 0);
 
-                statsDiff.initalizeStat(statValue.statDefinition, value);
+                statsDiff.initalizeStat(statValueContainer.statDefinition, value);
             }
 
            return statsDiff;
